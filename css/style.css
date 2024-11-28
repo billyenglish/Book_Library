@@ -2,14 +2,14 @@
 
 :root {
     --header: 5rem;
-    --footer: 2rem;
+    --footer: 3rem;
     --main: calc(100vh - calc(var(--header) + var(--footer)));
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;   93928100
 }
 
 body {
@@ -25,6 +25,11 @@ body {
     height: 100vh;
     border: 1px solid #000;
     height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header header header header header"
+        "aside-1 main main main aside-2"
+        "footer footer footer footer footer";
 }
 
 /* Header Section */
@@ -32,12 +37,25 @@ body {
 header {
     outline: 1px solid blue;
     height: var(--header);
-    text-align: center;
+    grid-area: header;
 }
 
 nav {
+    height: inherit;
     outline: 1px solid green;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-navbar {
+    display: flex;
+    gap: 1rem;
+}
+
+.right-navbar {
+    display: flex;
+    gap: 1rem;
 }
 
 /* Main Section */
@@ -45,24 +63,25 @@ nav {
 main {
     height: var(--main);
     outline: 1px solid yellow;
-    text-align: center;
+    grid-area: main;
 }
 
 /* Aside Section */
 
 aside {
     outline: 1px solid purple;
-    text-align: center;
 }
 
 .aside-1 {
     outline: 1px solid orange;
     text-align: center;
+    grid-area: aside-1;
 }
 
 .aside-2 {
     outline: 1px solid maroon;
     text-align: center;
+    grid-area: aside-2;
 }
 
 /* Footer Section */
@@ -70,5 +89,5 @@ aside {
 footer {
     outline: 1px solid grey;
     height: var(--footer);
-    text-align: center;
+    grid-area: footer;
 }
