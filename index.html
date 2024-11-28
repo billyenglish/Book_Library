@@ -14,13 +14,19 @@
                 <div class="left-navbar">
                     <h1 id="logo">Library</h1>
                     <hr>
-                    <input type="text" placeholder="Search">
+                    <div class="search-input">
+                        <i class="ri-search-line"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
                 </div>
 
                 <div class="right-navbar">
                     <button type="button">Subscribe</button>
                     <p>User name</p>
                     <hr>
+                    <div>
+                        <i class="ri-home-4-line"></i>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -33,33 +39,40 @@
             </section>
         </main>
         <aside class="aside-1">
-            <h3>browse</h3>
 
-            <ul>
-                <li>top books</li>
-                <li>discover</li>
-                <li>categories</li>
-            </ul>
+            <div class="my-browse">
+                <h3 class="aside-title">browse</h3>
 
-
-            <div class="my-menu">
-                <h3>your books</h3>
-
-                <ul>
-                    <li>reading</li>
-                    <li>favorite books</li>
-                    <li>history</li>
+                <ul class="aside-list">
+                    <li><i class="ri-bookmark-fill"></i>top books</li>
+                    <li><i class="ri-compass-line"></i>discover</li>
+                    <li><i class="ri-book-shelf-line"></i>categories</li>
                 </ul>
+
             </div>
 
-            h
+            <hr>
+
+            <div class="my-menu">
+
+                <h3 class="aside-title">your books</h3>
+
+                <ul class="aside-list">
+                    <li><i class="ri-book-read-line"></i>reading</li>
+                    <li><i class="ri-book-line"></i>favorite books</li>
+                    <li><i class="ri-history-line"></i>history</li>
+                </ul>
+
+            </div>
+
+            <hr>
 
             <div class="my-shelves">
 
-                <h3>shelves</h3>
+                <h3 class="aside-title">shelves</h3>
 
-                <ul>
-                    <li>your shelves</li>
+                <ul class="aside-list">
+                    <li><i class="ri-book-shelf-fill"></i>your shelves</li>
                 </ul>
 
                 <button type="button">Create a Shelf</button>
@@ -67,7 +80,9 @@
             </div>
         </aside>
         <aside class="aside-2">
-            <h3>your friends</h3>
+            <div>
+                <h3 class="aside-title">your friends</h3>
+            </div>
         </aside>
         <footer class="footer">
             Footer
