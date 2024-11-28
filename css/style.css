@@ -9,13 +9,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   93928100
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
 }
+
+/* Body Section */
 
 body {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 62.5%;
     min-width: 100%;
+}
+
+button {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 /* Grid Container*/
@@ -56,6 +64,11 @@ nav {
 .right-navbar {
     display: flex;
     gap: 1rem;
+    align-items: center;
+}
+
+#logo {
+    font-family: "Indie Flower", Arial, Helvetica, sans-serif;
 }
 
 /* Main Section */
@@ -70,18 +83,34 @@ main {
 
 aside {
     outline: 1px solid purple;
+    margin:  0 auto;
 }
 
 .aside-1 {
     outline: 1px solid orange;
-    text-align: center;
     grid-area: aside-1;
 }
 
 .aside-2 {
     outline: 1px solid maroon;
-    text-align: center;
     grid-area: aside-2;
+}
+
+aside div {
+}
+
+.my-browse, .my-menu, .my-shelves {
+}
+
+.aside-title {
+    font-size: .9rem;
+    font-weight: 350;
+    text-transform: uppercase;
+}
+
+.aside-list {
+    font-size: 1rem;
+    text-transform: capitalize;
 }
 
 /* Footer Section */
