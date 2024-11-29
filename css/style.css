@@ -79,6 +79,12 @@ main {
     grid-area: main;
 }
 
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
 /* Aside Section */
 
 aside {
