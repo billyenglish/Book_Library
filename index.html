@@ -75,7 +75,7 @@
                     <li><i class="ri-book-shelf-fill"></i>your shelves</li>
                 </ul>
 
-                <button type="button">Create a Shelf</button>
+                <button type="button" id="book-shelf">Create a Shelf</button>
 
             </div>
         </aside>
@@ -88,5 +88,12 @@
             Footer
         </footer>
     </div>
+    <script>
+        const createShelf = document.querySelector("#book-shelf");
+
+        createShelf.addEventListener("click", () => {
+            alert("Create Shelf");
+        });
+    </script>
 </body>
 </html>
