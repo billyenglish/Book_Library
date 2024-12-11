@@ -1,3 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Section */
+
 body {
-    background-color: rebeccapurple;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    min-width: 100%;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header header header header header header header header"
+        "aside-1 aside-1 main main main main aside-2 aside-2"
+        "footer footer footer footer footer footer footer footer";
+}
+
+/* Header Section */
+
+header {
+    border: 1px solid #000;
+    grid-area: header;
+}
+
+/* Main Section */
+
+main {
+    border: 1px solid #000;
+    grid-area: main;
+}
+
+#main {
+}
+
+/* Aside */
+
+aside {
+}
+
+/* Aside 1 Section */
+
+#aside-1 {
+    border: 1px solid #000;
+    grid-area: aside-1;
+}
+
+/* Aside 2 Section */
+
+#aside-2 {
+    border: 1px solid #000;
+    grid-area: aside-2;
+}
+
+/* Footer Section */
+
+footer {
+    outline: 1px solid #000;
+    grid-area: footer;
 }
