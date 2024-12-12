@@ -24,6 +24,7 @@ body {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 62.5%;
     min-width: 100%;
+    z-index: 1;
 }
 
 #grid-container {
@@ -75,7 +76,6 @@ header {
 }
 
 #search-input {
-    border: none;
 }
 
 /* Nav Left Containers */
@@ -167,7 +167,6 @@ aside {
 }
 
 #aside-1 {
-    border: 1px solid #000;
     grid-area: aside-1;
 }
 
@@ -209,7 +208,6 @@ aside {
 /* Aside 2 Section */
 
 #aside-2 {
-    border: 1px solid #000;
     grid-area: aside-2;
 }
 
@@ -222,6 +220,24 @@ aside {
 .aside-navbar {
     margin: 2rem 0 0 1.25rem;
     min-width: 80%;
+}
+
+/* User Form */
+
+dialog {
+    border: 1px solid #000;
+    z-index: 100;
+    position: absolute;
+    top: 30%;
+    margin: 0 auto;
+}
+
+form {
+    border: 1px solid #000;
+}
+
+.form-title {
+    text-align: center;
 }
 
 /* Footer Section */
