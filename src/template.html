@@ -99,7 +99,7 @@
                             <li class="menu-items"><box-icon type='solid' name='book-content'></box-icon><a href="#" class="nav-link">your shelves</a></li>
                         </ul>
 
-                        <button type="button" class="button" id="create-shelf">create a shelf</button>
+                        <button type="button" class="button" id="create-shelf">create a book</button>
                     </div>
                 </div>
 
@@ -130,5 +130,21 @@
             <p>&copy; Copyright Virtual Library by Billy English</p>
         </footer>
     </div>
+    <dialog open>
+
+        <p class="form-title">add your book</p>
+
+        <form>
+            <div>
+                <input type="text" name="book-title" id="book-title" placeholder="Book Title">
+            </div>
+            <div>
+                <input type="text" name="book-author" id="book-author" placeholder="Author">
+            </div>
+            <div>
+                <input type="number" name="book-pages" id="book-pages" placeholder="Pages">
+            </div>
+        </form>
+    </dialog>
 </body>
 </html>
