@@ -43,6 +43,88 @@ header {
     height: var(--header);
 }
 
+.nav-header {
+    height: inherit;
+    padding: 0 2rem 0 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left-containers {
+    display: flex;
+    gap: 1rem;
+}
+
+#logo {
+    font-size: 1rem;
+    font-weight: 460;
+}
+
+.search-container {
+    display: flex;
+}
+
+#search-input {
+    border: none;
+}
+
+/* Nav Left Containers */
+
+.nav-right-containers {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.panel-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.subscribe-button {
+    display: flex;
+    align-items: center;
+}
+
+#subscribe {
+    text-transform: capitalize;
+    padding: .25rem .5rem;
+    font-size: .9rem;
+    font-weight: 400;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.user-profile p {
+    font-size: 1rem;
+}
+
+.vertical-border {
+    display: block;
+    border-right: 1px solid #000;
+}
+
+.control-panel {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
 /* Main Section */
 
 main {
@@ -52,6 +134,16 @@ main {
 }
 
 #main {
+    border: 1px solid #000;
+}
+
+.section {
+    border: 1px solid #000;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 /* Aside */
@@ -63,7 +155,7 @@ aside {
 
 /* Aside 1 Section */
 
-nav {
+.nav-aside {
     display: flex;
     justify-content: left;
     min-width: inherit;
@@ -121,10 +213,29 @@ nav {
     grid-area: aside-2;
 }
 
+.aside-container {
+    display: flex;
+    justify-content: left;
+    min-width: inherit;
+}
+
+.aside-navbar {
+    margin: 2rem 0 0 1.25rem;
+    min-width: 80%;
+}
+
 /* Footer Section */
 
 footer {
     outline: 1px solid #000;
     grid-area: footer;
     height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p {
+    font-size: 1rem;
+    text-transform: capitalize;
 }
