@@ -8,19 +8,60 @@
 </head>
 <body>
     <div id="grid-container">
-        <header id="">
-            Header
+        <header id="header">
+            <nav class="nav-header">
+                <div class="nav-menu">
+                    
+                    <div class="nav-left">
+                        <div class="nav-left-containers">
+                            <h1 id="logo">Virtual Library</h1>
+
+                            <div class="search-container">
+                                <box-icon name='search' ></box-icon>
+                                <input type="text" name="search" id="search-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-right">
+                        <div class="nav-right-containers">
+
+                            <div class="panel-right">
+
+                                <div class="subscribe-button">
+                                    <button type="button" id="subscribe">Subscribe</button>
+                                </div>
+
+                                <div class="user-profile">
+                                    <p class="username">User Profile</p>
+                                    <box-icon name='user-circle' ></box-icon>
+                                </div>
+
+                                <div class="vertical-border"></div>
+
+                                <div class="control-panel">
+                                    <box-icon name='home' type='solid' ></box-icon>
+                                    <box-icon name='user-detail' type='solid' ></box-icon>
+                                </div>
+                        
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
         </header>
         <main id="main">
-            <section>
-                Recently Added
+            <section class="section recently-added">
+                <h2 class="section-title">Recently Added</h2>
             </section>
-            <section>
-                Recommended For You
+            <section class="section recommended-for-you">
+                <h2 class="section-title">Recommended For You</h2>
             </section>
         </main>
         <aside id="aside-1">
-            <nav>
+            <nav class="nav-aside">
                 <div class="nav-container">
 
                     <div class="nav-menus">
@@ -58,17 +99,35 @@
                             <li class="menu-items"><box-icon type='solid' name='book-content'></box-icon><a href="#" class="nav-link">your shelves</a></li>
                         </ul>
 
-                        <button type="button" id="create-shelf">create a shelf</button>
+                        <button type="button" class="button" id="create-shelf">create a shelf</button>
                     </div>
                 </div>
 
             </nav>
         </aside>
         <aside id="aside-2">
-            Aside 2
+            
+            <div class="aside-container">
+
+                <div class="aside-navbar">
+
+                    <div class="nav-menus">
+
+                        <h3 class="nav-title">your friends</h3>
+
+                        <ul class="menu">
+                            <li class="menu-items"><a href="#" class="nav-link"></a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </aside>
         <footer id="footer">
-            Footer
+            <p>&copy; Copyright Virtual Library by Billy English</p>
         </footer>
     </div>
 </body>
