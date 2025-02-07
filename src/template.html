@@ -39,9 +39,9 @@
 
                                 <div class="vertical-border"></div>
 
-                                <div class="control-panel">
-                                    <box-icon name='home' type='solid' ></box-icon>
-                                    <box-icon name='user-detail' type='solid' ></box-icon>
+                                <div class="nav-control-panel">
+                                    <box-icon name='home' type='solid' class="home-icon" ></box-icon>
+                                    <box-icon name='user-detail' type='solid' class="user-detail" ></box-icon>
                                 </div>
 
                             </div>
@@ -54,10 +54,7 @@
         </header>
         <main id="main">
             <section class="section recently-added">
-                <h2 class="section-title">Recently Added</h2>
-            </section>
-            <section class="section recommended-for-you">
-                <h2 class="section-title">Recommended For You</h2>
+                <h2 class="section-title">Top Books</h2>
             </section>
         </main>
         <aside id="aside-1">
@@ -131,10 +128,8 @@
         </footer>
     </div>
     <dialog open>
-
-        <p class="form-title">add your book</p>
-
         <form>
+            <p class="form-title">add your book</p>
             <div>
                 <input type="text" name="book-title" id="book-title" placeholder="Book Title">
             </div>
