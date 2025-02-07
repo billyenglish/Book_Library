@@ -148,7 +148,6 @@ main {
 }
 
 .section {
-    border: 1px solid #000;
     min-height: 100%;
 }
 
@@ -238,8 +237,63 @@ aside {
 /* User Form */
 
 dialog {
-    top: 40%;
+    top: 30%;
     margin: 0 auto;
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 24rem;
+    min-width: 18rem;
+    border-radius: .25rem;
+    border: 1px solid #000;
+}
+
+.close-form {
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+}
+
+.close-form:hover {
+    cursor: pointer;
+}
+
+#book-form > div {
+    padding: .5rem 0;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 2.75rem 0 1rem 0;
+}
+
+#book-form input[type=text], #book-form input[type=number] {
+    min-height: 2.25rem;
+    min-width: 12rem;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    padding-left: .1rem;
+}
+
+#book-form input[type=text]::placeholder, #book-form input[type=number]::placeholder {
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    color: #000;
+}
+
+.read-book {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: .9rem;
+    margin-top: .5rem;
 }
 
 .control-panel {
@@ -247,6 +301,8 @@ dialog {
     justify-content: center;
     padding-top: 1rem;
     padding-bottom: 2rem;
+    gap: .75rem;
+    margin-top: .5rem;
 }
 
 .control-panel button {

@@ -17,7 +17,7 @@
                             <h1 id="logo">Virtual Library</h1>
 
                             <div class="search-container">
-                                <box-icon name='search' ></box-icon>
+                                <box-icon name='search' size="sm"></box-icon>
                                 <input type="text" name="search" id="search-input">
                             </div>
                         </div>
@@ -40,8 +40,8 @@
                                 <div class="vertical-border"></div>
 
                                 <div class="nav-control-panel">
-                                    <box-icon name='home' type='solid' class="home-icon" ></box-icon>
-                                    <box-icon name='user-detail' type='solid' class="user-detail" ></box-icon>
+                                    <box-icon name='home' type='solid' class="home-icon" size="sm"></box-icon>
+                                    <box-icon name='user-detail' type='solid' class="user-detail" size="md"></box-icon>
                                 </div>
 
                             </div>
@@ -65,9 +65,9 @@
                         <h3 class="nav-title">browse</h3>
 
                         <ul class="menu">
-                            <li class="menu-items"><box-icon type='solid' name='bookmarks'></box-icon><a href="#" class="nav-link">top books</a></li>
-                            <li class="menu-items"><box-icon name='book-add' type='solid' ></box-icon><a href="#" class="nav-link">discover</a></li>
-                            <li class="menu-items"><box-icon name='book-heart' type='solid' ></box-icon><a href="#" class="nav-link">categories</a></li>
+                            <li class="menu-items"><box-icon type='solid' name='bookmarks' size="sm"></box-icon><a href="#" class="nav-link">top books</a></li>
+                            <li class="menu-items"><box-icon name='book-add' type='solid' size="sm"></box-icon><a href="#" class="nav-link">discover</a></li>
+                            <li class="menu-items"><box-icon name='book-heart' type='solid' size="sm"></box-icon><a href="#" class="nav-link">categories</a></li>
                         </ul>
 
                     </div>
@@ -79,9 +79,9 @@
                         <h3 class="nav-title">your books</h3>
 
                         <ul class="menu">
-                            <li class="menu-items"><box-icon name='book-open' ></box-icon><a href="#" class="nav-link">reading</a></li>
-                            <li class="menu-items"><box-icon type='solid' name='bookmark-alt-plus'></box-icon><a href="#" class="nav-link">favorite books</a></li>
-                            <li class="menu-items"><box-icon name='history' ></box-icon><a href="#" class="nav-link">history</a></li>
+                            <li class="menu-items"><box-icon name='book-open' size="sm"></box-icon><a href="#" class="nav-link">reading</a></li>
+                            <li class="menu-items"><box-icon type='solid' name='bookmark-alt-plus' size="sm"></box-icon><a href="#" class="nav-link">favorite books</a></li>
+                            <li class="menu-items"><box-icon name='history' size="sm"></box-icon><a href="#" class="nav-link">history</a></li>
                         </ul>
 
                     </div>
@@ -93,7 +93,7 @@
                         <h3 class="nav-title">shelves</h3>
 
                         <ul class="menu">
-                            <li class="menu-items"><box-icon type='solid' name='book-content'></box-icon><a href="#" class="nav-link">your shelves</a></li>
+                            <li class="menu-items"><box-icon type='solid' name='book-content' size="sm"></box-icon><a href="#" class="nav-link">your shelves</a></li>
                         </ul>
 
                         <button type="button" class="button" id="create-book">create a book</button>
@@ -127,8 +127,9 @@
             <p>&copy; Copyright Virtual Library by Billy English</p>
         </footer>
     </div>
-    <dialog open>
-        <form>
+    <dialog>
+        <form id="book-form">
+            <box-icon name='x' class="close-form" size="sm"></box-icon>
             <p class="form-title">add your book</p>
             <div>
                 <input type="text" name="book-title" id="book-title" placeholder="Book Title">
@@ -140,8 +141,8 @@
                 <input type="number" name="book-pages" id="book-pages" placeholder="Pages">
             </div>
             <div>
-                <label for="">Did you read this book?
-                    <input type="checkbox">
+                <label for="read-book" class="read-book">Did you read this book?
+                    <input type="checkbox" name="read-book" id="read-book">
                 </label>
             </div>
             <div class="control-panel">
