@@ -11,7 +11,7 @@
         <header id="header">
             <nav class="nav-header">
                 <div class="nav-menu">
-                    
+
                     <div class="nav-left">
                         <div class="nav-left-containers">
                             <h1 id="logo">Virtual Library</h1>
@@ -43,7 +43,7 @@
                                     <box-icon name='home' type='solid' ></box-icon>
                                     <box-icon name='user-detail' type='solid' ></box-icon>
                                 </div>
-                        
+
                             </div>
 
                         </div>
@@ -78,9 +78,9 @@
                     <hr>
 
                     <div class="nav-menus">
-                        
+
                         <h3 class="nav-title">your books</h3>
-                        
+
                         <ul class="menu">
                             <li class="menu-items"><box-icon name='book-open' ></box-icon><a href="#" class="nav-link">reading</a></li>
                             <li class="menu-items"><box-icon type='solid' name='bookmark-alt-plus'></box-icon><a href="#" class="nav-link">favorite books</a></li>
@@ -92,21 +92,21 @@
                     <hr>
 
                     <div class="nav-menus">
-                        
+
                         <h3 class="nav-title">shelves</h3>
-                        
+
                         <ul class="menu">
                             <li class="menu-items"><box-icon type='solid' name='book-content'></box-icon><a href="#" class="nav-link">your shelves</a></li>
                         </ul>
 
-                        <button type="button" class="button" id="create-shelf">create a book</button>
+                        <button type="button" class="button" id="create-book">create a book</button>
                     </div>
                 </div>
 
             </nav>
         </aside>
         <aside id="aside-2">
-            
+
             <div class="aside-container">
 
                 <div class="aside-navbar">
@@ -143,6 +143,15 @@
             </div>
             <div>
                 <input type="number" name="book-pages" id="book-pages" placeholder="Pages">
+            </div>
+            <div>
+                <label for="">Did you read this book?
+                    <input type="checkbox">
+                </label>
+            </div>
+            <div class="control-panel">
+                <button type="button" id="cancel">Cancel</button>
+                <button type="button" id="submit">Submit</button>
             </div>
         </form>
     </dialog>
