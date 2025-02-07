@@ -64,18 +64,27 @@ header {
 .nav-left-containers {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 #logo {
-    font-size: 1rem;
-    font-weight: 460;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 
 .search-container {
     display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    padding: .25rem;
+    border-radius: .25rem;
 }
 
 #search-input {
+    outline: none;
+    min-height: 1.5rem;
+    min-width: 14rem;
+    border: none;
 }
 
 /* Nav Left Containers */
@@ -119,7 +128,8 @@ header {
     border-right: 1px solid #000;
 }
 
-.control-panel {
+.nav-control-panel {
+    font-size: 2rem;
     display: flex;
     gap: .5rem;
     align-items: center;
@@ -139,10 +149,11 @@ main {
 
 .section {
     border: 1px solid #000;
+    min-height: 100%;
 }
 
 .section-title {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 300;
 }
 
@@ -172,6 +183,7 @@ aside {
 
 .nav-title {
     font-size: 1rem;
+    letter-spacing: .1rem;
     font-weight: 400;
     text-transform: uppercase;
     padding: .75rem 0 .75rem 0;
@@ -182,6 +194,7 @@ aside {
 }
 
 .menu-items {
+    font-size: 1rem;
     display: flex;
     align-items: center;
     padding: .2rem 0 .2rem 0;
@@ -189,11 +202,11 @@ aside {
 }
 
 .nav-link {
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 500;
     text-transform: capitalize;
     padding: .25rem 0 .25rem 0;
-    color: lightslategrey;
+    color: #000;
 }
 
 #create-book {
@@ -225,45 +238,8 @@ aside {
 /* User Form */
 
 dialog {
-    border: 1px solid #000;
-    z-index: 100;
-    position: absolute;
-    top: 30%;
+    top: 40%;
     margin: 0 auto;
-}
-
-.form-title {
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 1rem 0 1.5rem 0;
-}
-
-form {
-    border: 1px solid #000;
-    display: flex;
-    flex-direction: column;
-    gap: .75rem;
-    padding: 1rem;
-}
-
-form input[type="text"], input[type="number"] {
-    height: 2.5rem;
-    width: 12rem;
-    gap: .5rem;
-}
-
-form input::placeholder {
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    color: #000;
-}
-
-label {
-    display: flex;
-    font-size: .9rem;
-    gap: .25rem;
-    justify-content: center;
 }
 
 .control-panel {
