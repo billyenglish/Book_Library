@@ -135,3 +135,12 @@ yourShelves.addEventListener("click", () => {
     });
 
 });
+
+const createBook = document.querySelector("#create-book");
+const dialogBookForm = document.querySelector("#dialog-book-form");
+
+function bookFormModal() {
+    dialogBookForm.showModal()
+}
+
+createBook.addEventListener("click", bookFormModal);
