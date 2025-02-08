@@ -53,8 +53,26 @@
             </nav>
         </header>
         <main id="main">
-            <section class="section recently-added">
+            <section id="top-books-section" class="section top-books-section">
                 <h2 class="section-title">Top Books</h2>
+            </section>
+            <section id="discover-section" class="section discover-section">
+                <h2 class="section-title">Discover</h2>
+            </section>
+            <section id="categories-section" class="section categories-section">
+                <h2 class="section-title">Categories</h2>
+            </section>
+            <section id="reading-section" class="section reading-section">
+                <h2 class="section-title">Reading</h2>
+            </section>
+            <section id="favorite-books-section" class="section favorite-books-section">
+                <h2 class="section-title">Favorite Books</h2>
+            </section>
+            <section id="history-section" class="section history-section">
+                <h2 class="section-title">History</h2>
+            </section>
+            <section id="your-shelves-section" class="section your-shelves-section">
+                <h2 class="section-title">Your Shelves</h2>
             </section>
         </main>
         <aside id="aside-1">
@@ -65,9 +83,9 @@
                         <h3 class="nav-title">browse</h3>
 
                         <ul class="menu">
-                            <li class="menu-items"><box-icon type='solid' name='bookmarks' size="sm"></box-icon><a href="#" class="nav-link">top books</a></li>
-                            <li class="menu-items"><box-icon name='book-add' type='solid' size="sm"></box-icon><a href="#" class="nav-link">discover</a></li>
-                            <li class="menu-items"><box-icon name='book-heart' type='solid' size="sm"></box-icon><a href="#" class="nav-link">categories</a></li>
+                            <li class="menu-items top-books"><box-icon type='solid' name='bookmarks' size="sm"></box-icon><a href="#" class="nav-link">top books</a></li>
+                            <li class="menu-items discover"><box-icon name='book-add' type='solid' size="sm"></box-icon><a href="#" class="nav-link">discover</a></li>
+                            <li class="menu-items categories"><box-icon name='book-heart' type='solid' size="sm"></box-icon><a href="#" class="nav-link">categories</a></li>
                         </ul>
 
                     </div>
@@ -79,9 +97,9 @@
                         <h3 class="nav-title">your books</h3>
 
                         <ul class="menu">
-                            <li class="menu-items"><box-icon name='book-open' size="sm"></box-icon><a href="#" class="nav-link">reading</a></li>
-                            <li class="menu-items"><box-icon type='solid' name='bookmark-alt-plus' size="sm"></box-icon><a href="#" class="nav-link">favorite books</a></li>
-                            <li class="menu-items"><box-icon name='history' size="sm"></box-icon><a href="#" class="nav-link">history</a></li>
+                            <li class="menu-items reading"><box-icon name='book-open' size="sm"></box-icon><a href="#" class="nav-link">reading</a></li>
+                            <li class="menu-items favorite-books"><box-icon type='solid' name='bookmark-alt-plus' size="sm"></box-icon><a href="#" class="nav-link">favorite books</a></li>
+                            <li class="menu-items history"><box-icon name='history' size="sm"></box-icon><a href="#" class="nav-link">history</a></li>
                         </ul>
 
                     </div>
@@ -93,7 +111,7 @@
                         <h3 class="nav-title">shelves</h3>
 
                         <ul class="menu">
-                            <li class="menu-items"><box-icon type='solid' name='book-content' size="sm"></box-icon><a href="#" class="nav-link">your shelves</a></li>
+                            <li class="menu-items your-shelves"><box-icon type='solid' name='book-content' size="sm"></box-icon><a href="#" class="nav-link">your shelves</a></li>
                         </ul>
 
                         <button type="button" class="button" id="create-book">create a book</button>

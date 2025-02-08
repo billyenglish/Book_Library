@@ -42,6 +42,7 @@ header {
     border: 1px solid #000;
     grid-area: header;
     height: var(--header);
+    z-index: 1;
 }
 
 .nav-header {
@@ -149,11 +150,23 @@ main {
 
 .section {
     min-height: 100%;
+    min-width: 100%;
+}
+
+.discover-section,
+.categories-section,
+.reading-section,
+.favorite-books-section,
+.history-section,
+.your-shelves-section {
+    display: none;
 }
 
 .section-title {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
     font-weight: 300;
+    margin: 2rem 0 0 1rem;
+    position: fixed;
 }
 
 /* Aside */
@@ -321,6 +334,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 footer > p {
