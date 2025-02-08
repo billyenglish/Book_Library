@@ -136,6 +136,10 @@ header {
     align-items: center;
 }
 
+.home-icon:hover, .user-detail:hover {
+    cursor: pointer;
+}
+
 /* Main Section */
 
 main {
