@@ -142,10 +142,10 @@
 
         </aside>
         <footer id="footer">
-            <p>&copy; Copyright Virtual Library by Billy English</p>
+            <p>&copy; Copyright 2025 Virtual Library by Billy English</p>
         </footer>
     </div>
-    <dialog>
+    <dialog id="dialog-book-form">
         <form id="book-form">
             <box-icon name='x' class="close-form" size="sm"></box-icon>
             <p class="form-title">add your book</p>
@@ -156,7 +156,7 @@
                 <input type="text" name="book-author" id="book-author" placeholder="Author">
             </div>
             <div>
-                <input type="number" name="book-pages" id="book-pages" placeholder="Pages">
+                <input type="number" name="book-pages" id="book-pages" placeholder="Pages" min="1">
             </div>
             <div>
                 <label for="read-book" class="read-book">Did you read this book?
