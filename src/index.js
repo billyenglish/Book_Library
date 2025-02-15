@@ -41,8 +41,6 @@ const bookTitle = document.querySelector("#book-title");
 const bookAuthor = document.querySelector("#book-author");
 const bookPages = document.querySelector("#book-pages");
 const bookRead = document.querySelector("#book-read");
-const cancelButton = document.querySelector("#cancel");
-const sumbitButton = document.querySelector("#submit");
 
 // Navigation of the Main Section
 
@@ -138,9 +136,26 @@ yourShelves.addEventListener("click", () => {
 
 const createBook = document.querySelector("#create-book");
 const dialogBookForm = document.querySelector("#dialog-book-form");
+const closeForm = document.querySelector("#close-bookform");
+const cancelBook = document.querySelector("#cancel");
+const submitBook = document.querySelector("#submit");
 
 function bookFormModal() {
     dialogBookForm.showModal()
 }
 
 createBook.addEventListener("click", bookFormModal);
+
+function closeBookFormModal() {
+    dialogBookForm.close()
+}
+
+closeForm.addEventListener("click", closeBookFormModal);
+
+cancelBook.addEventListener("click", () => {
+    alert("Cancel Button");
+});
+
+submitBook.addEventListener("click", () => {
+    alert("Submit Button");
+});
