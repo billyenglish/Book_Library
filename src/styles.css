@@ -269,13 +269,13 @@ form {
     border: 1px solid #000;
 }
 
-.close-form {
+#close-bookform {
     position: absolute;
     right: .5rem;
     top: .5rem;
 }
 
-.close-form:hover {
+#close-bookform:hover {
     cursor: pointer;
 }
 
